@@ -1,0 +1,49 @@
+body {
+    padding: 100px;
+    margin: 100px;
+    background: #fc6a6a;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+      Helvetica, Arial, "Lucida Grande", sans-serif;
+    height: 100%;
+  }
+  
+  .container {
+    width: 500px;
+    margin: 30px auto;
+    color: 87CEEB;
+    text-align: center;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 2.6em;
+    text-transform: uppercase;
+  }
+  
+  #seconds,
+  #tens {
+    font-size: 3em;
+  }
+  
+  button {
+    @include corners(5px);
+    background: #93fc6a;
+    color: $white;
+    border: solid 1px $white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 10px 10px;
+    width: 100px;
+    margin: 10px;
+    outline: none;
+    &:hover {
+      @include transition;
+      background: $white;
+      border: solid 1px $white;
+      color: $base-color;
+    }
+  }
